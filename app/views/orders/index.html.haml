@@ -25,7 +25,7 @@
     .Waffles__box--input
       .Waffles__box--input--select_number 
         個数
-      = select_tag '/',options_for_select(["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"])     
+      = select_tag '/',options_for_select([" ", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]), class: "input1"    
   .Waffles__box
     = image_tag "/choco.jpg", alt: "チョコ", class: "Waffles__box--image"
     .Waffles__box--title
@@ -37,7 +37,7 @@
     .Waffles__box--input
       .Waffles__box--input--select_number 
         個数
-      = select_tag '/',options_for_select(["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"])
+      = select_tag '/',options_for_select([" ", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]), class: "input2"
   .Waffles__box
     = image_tag "/matcha.jpg", alt: "宇治抹茶", class: "Waffles__box--image"
     .Waffles__box--title
@@ -49,7 +49,7 @@
     .Waffles__box--input
       .Waffles__box--input--select_number 
         個数
-      = select_tag '/',options_for_select(["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"])
+      = select_tag '/',options_for_select([" ", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]), class: "input3"
   .Waffles__box 
     = image_tag "/remon&tea.jpg", alt: "檸檬と紅茶", class: "Waffles__box--image"
     .Waffles__box--title
@@ -61,7 +61,7 @@
     .Waffles__box--input
       .Waffles__box--input--select_number 
         個数
-      = select_tag '/',options_for_select(["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"])
+      = select_tag '/',options_for_select([" ", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]), class: "input4"
   .Waffles__box
     = image_tag "/maple.jpg", alt: "メープル", class: "Waffles__box--image"
     .Waffles__box--title
@@ -73,6 +73,19 @@
     .Waffles__box--input
       .Waffles__box--input--select_number 
         個数
-      = select_tag '/',options_for_select(["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"])
-  .Contents__price
+      = select_tag '/',options_for_select([" ", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]), class: "input5"
+.Prices
+  .Prices__title
+    ご注文内容
+  .Prices__contents
+    .Prices__contents--fleaver
+      プレーンワッフル
+    .Prices__contents--fleaver
+      チョコワッフル
+    .Prices__contents--fleaver
+      宇治抹茶ワッフル
+    .Prices__contents--fleaver
+      檸檬と紅茶ワッフル
+    .Prices__contents--fleaver
+      メープルワッフル
   .Contents__form

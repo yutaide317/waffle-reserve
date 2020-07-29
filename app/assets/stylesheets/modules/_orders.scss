@@ -28,7 +28,7 @@
 .Contents {
   height: calc(100vh - 50px);
   &__image {
-    height: 100%;
+    height: 90%;
     width: 100%;
   }
 }
@@ -53,6 +53,7 @@
   padding: 0 80px;
   display: flex;
   width: 100%;
+  height: 500px;
   &__box {
     height: 400px;
     width: 300px;
@@ -88,4 +89,25 @@
       }
     }
   }
+}
+.Prices {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &__title {
+    font-size: 35px;
+    font-weight: bold;
+    color: gray;
+    border-bottom: solid 3px brown;
+    margin-bottom: 30px;
+  }
+  &__contents {
+    font-size: 20px;
+    color: gray;
+    &--fleaver {
+      margin: 10px 0;
+    }
+  }
+
 }
