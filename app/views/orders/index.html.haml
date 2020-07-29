@@ -21,7 +21,11 @@
     .Waffles__box--text
       蜂蜜とバターの風味豊かなワッフルです
     .Waffles__box--price
-      130円（税抜き）
+      130円（税抜き)
+    .Waffles__box--input
+      .Waffles__box--input--select_number 
+        個数
+      = select_tag '/',options_for_select(["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"])     
   .Waffles__box
     = image_tag "/choco.jpg", alt: "チョコ", class: "Waffles__box--image"
     .Waffles__box--title
@@ -30,6 +34,10 @@
       ビタースウィートチョコをコーティングしました
     .Waffles__box--price
       150円（税抜き）
+    .Waffles__box--input
+      .Waffles__box--input--select_number 
+        個数
+      = select_tag '/',options_for_select(["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"])
   .Waffles__box
     = image_tag "/matcha.jpg", alt: "宇治抹茶", class: "Waffles__box--image"
     .Waffles__box--title
@@ -38,6 +46,10 @@
       京都産宇治抹茶と北海道小豆を練り込んだワッフルです
     .Waffles__box--price
       150円（税抜き）
+    .Waffles__box--input
+      .Waffles__box--input--select_number 
+        個数
+      = select_tag '/',options_for_select(["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"])
   .Waffles__box 
     = image_tag "/remon&tea.jpg", alt: "檸檬と紅茶", class: "Waffles__box--image"
     .Waffles__box--title
@@ -46,6 +58,10 @@
       蜜漬けレモンピールとダージリンの茶葉を練り込んだワッフルです
     .Waffles__box--price
       150円（税抜き）
+    .Waffles__box--input
+      .Waffles__box--input--select_number 
+        個数
+      = select_tag '/',options_for_select(["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"])
   .Waffles__box
     = image_tag "/maple.jpg", alt: "メープル", class: "Waffles__box--image"
     .Waffles__box--title
@@ -54,5 +70,9 @@
       メープルシロップを使用したコクのある味わいのワッフルです
     .Waffles__box--price
       150円（税抜き）
+    .Waffles__box--input
+      .Waffles__box--input--select_number 
+        個数
+      = select_tag '/',options_for_select(["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"])
   .Contents__price
   .Contents__form

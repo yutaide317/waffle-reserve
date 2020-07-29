@@ -64,7 +64,7 @@
     }
     &--title {
       font-size: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       padding:0 40px;
       font-weight: bold;
     }
@@ -77,6 +77,15 @@
       padding-left: 40px;
       font-weight: bold;
       margin-top: 10px;
+    }
+    &--input {
+      font-size: 13px;
+      display: flex;
+      padding-left: 40px;
+      margin-top: 5px;
+      &--select_number {
+      margin-right: 5px;
+      }
     }
   }
 }
