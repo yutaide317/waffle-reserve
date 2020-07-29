@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+.Header {
+  height: 50px;
+  background-color: #4f2e00;
+  padding: 10px 0;
+  display: flex;
+  color: #ffffff;
+  &__logo {
+    width: 50%;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+  }
+  &__info {
+    width: 50%;
+    padding-left: 500px;
+    display: flex;
+    justify-content: space-around;
+    &--user {
+      }
+    &--logout {
+    }
+  }
+}
+.Contents {
+  height: calc(100vh - 50px);
+  &__image {
+    height: 100%;
+    width: 100%;
+  }
+}
+.Select {
+  color: #4f2e00;
+  height: 100px ;
+  margin: 0 160px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &__waffle {
+    font-size: 30px;  
+    border-bottom: solid 3px brown;
+    text-align: center;
+    width: 100px;
+  }
+  &__waffleB {
+    margin-top: 20px;
+  }
+}
+.Waffles {
+  padding: 0 80px;
+  display: flex;
+  width: 100%;
+  &__box {
+    height: 400px;
+    width: 300px;
+    color: #4f2e00;
+    text-align: left;
+    &--image {
+      height: 250px;
+      width: 256px;
+    }
+    &--title {
+      font-size: 20px;
+      margin-bottom: 20px;
+      padding:0 40px;
+      font-weight: bold;
+    }
+    &--text {
+      font-size: 15px;
+      padding-left: 40px;
+    }
+    &--price {
+      font-size: 20px;
+      padding-left: 40px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  }
+}
