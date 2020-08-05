@@ -1,0 +1,34 @@
+.Wrapper_new  
+  .Title
+    .Title__first
+      ご注文画面
+    .Title__second
+      入力してください
+      
+  .FormSelect
+    = form_with url:'/orders', method: :post, local: true do |f|   
+      .Selects
+        .Selects__name
+          名前
+          = f.text_field :name, class:"Selects__name--text"
+        .Selects__email
+          メールアドレス
+          = f.text_field :email, class:"Selects__email--text"
+        .Selects__waffle
+          プレーンワッフル
+          = f.number_field :plain, class:"Selects__waffle--fleaver", min: 0
+          チョコワッフル
+          = f.number_field :choco, class:"Selects__waffle--fleaver", min: 0
+          宇治抹茶ワッフル
+          = f.number_field :matcha, class:"Selects__waffle--fleaver", min: 0
+          檸檬紅茶ワッフル
+          = f.number_field :lemon, class:"Selects__waffle--fleaver", min: 0
+          メープルワッフル
+          = f.number_field :maple, class:"Selects__waffle--fleaver", min: 0
+          受け取り日時
+          = f.datetime_field :signup_at, class:"Selects__waffle--time"
+        
+        = f.submit "注文を確定する", class:"Send_btn"
+        
+        .Back
+          = link_to "メニューに戻る", :back

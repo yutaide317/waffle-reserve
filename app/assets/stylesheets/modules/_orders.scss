@@ -2,28 +2,32 @@
   box-sizing: border-box;
 }
 .Header {
+  position: fixed;
   height: 50px;
+  width: 100%;
   background-color: #4f2e00;
   padding: 10px 0;
   display: flex;
   color: #ffffff;
+  border-bottom: sold 2px #cc9900;
+  
   &__logo {
     width: 50%;
     margin-left: 30px;
     font-size: 20px;
     font-weight: bold;
     font-style: italic;
+
   }
   &__info {
     width: 50%;
     padding-left: 500px;
     display: flex;
     justify-content: space-around;
-    &--user {
-      }
-    &--logout {
-    }
   }
+}
+.Wrapper {
+  background-color: #ffffcc;
 }
 .Contents {
   height: calc(100vh - 50px);
@@ -90,24 +94,97 @@
     }
   }
 }
-.Prices {
-  height: 500px;
+.Form {
+  height: 200px;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  &__title {
-    font-size: 35px;
-    font-weight: bold;
-    color: gray;
-    border-bottom: solid 3px brown;
-    margin-bottom: 30px;
-  }
+  font-size: 20px;
   &__contents {
-    font-size: 20px;
-    color: gray;
-    &--fleaver {
-      margin: 10px 0;
+    margin-top: 20px;
+    border: none;
+    color: #961596;
+  }
+}
+.Wrapper_new  {
+  background-color: #ffffcc;
+  height: 110vh;
+  width: 100%;
+}
+.Title {
+  color: #4f2e00;
+  height: 180px ;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 40px;
+}
+.FormSelect {
+  color: #4f2e00;
+  height: 380px ;
+  margin: 0 160px;
+  
+}
+.Selects {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 20px;
+
+  &__name {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    &--text{
+      height: 30px;
     }
   }
+  &__email {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &--text {
+      height: 30px;
+    }
+  }
+  &__waffle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &--fleaver {
+      width: 60px;
+      height: 30px;
+    }
+  }
+}
+.Send_btn {
+  margin-top: 40px;
+  font-size: 20px;
+  background-color: #660000;
+  color: #ffffff;
+}
+.Back {
+  font-size: 10px;
+  margin-top: 15px;
+}
+.Finish {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffffcc;
+  height: 100vh;
+  width: 100%;
+  &__contents {
+    font-size: 30px;
+    color: #4f2e00;
+  }
+  &__link {
+    margin-top: 20px;
 
+  }
 }

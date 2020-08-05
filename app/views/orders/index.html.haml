@@ -6,86 +6,70 @@
       yuta
     .Hesder__info--logout
       log
-.Contents
-  = image_tag "/waffleB.jpg", alt: "トップ画面", class: "Contents__image"
-.Select
-  %h1.Select__waffle
-    menu
-  %p.Select__waffleB
-    お好きなワッフルを選んでください
-.Waffles
-  .Waffles__box
-    = image_tag "/plain.jpg", alt: "プレーン", class: "Waffles__box--image"
-    .Waffles__box--title
-      プレーンワッフル
-    .Waffles__box--text
-      蜂蜜とバターの風味豊かなワッフルです
-    .Waffles__box--price
-      130円（税抜き)
-    .Waffles__box--input
-      .Waffles__box--input--select_number 
-        個数
-      = select_tag '/',options_for_select([" ", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]), class: "input1"    
-  .Waffles__box
-    = image_tag "/choco.jpg", alt: "チョコ", class: "Waffles__box--image"
-    .Waffles__box--title
-      チョコワッフル
-    .Waffles__box--text
-      ビタースウィートチョコをコーティングしました
-    .Waffles__box--price
-      150円（税抜き）
-    .Waffles__box--input
-      .Waffles__box--input--select_number 
-        個数
-      = select_tag '/',options_for_select([" ", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]), class: "input2"
-  .Waffles__box
-    = image_tag "/matcha.jpg", alt: "宇治抹茶", class: "Waffles__box--image"
-    .Waffles__box--title
-      宇治抹茶ワッフル
-    .Waffles__box--text
-      京都産宇治抹茶と北海道小豆を練り込んだワッフルです
-    .Waffles__box--price
-      150円（税抜き）
-    .Waffles__box--input
-      .Waffles__box--input--select_number 
-        個数
-      = select_tag '/',options_for_select([" ", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]), class: "input3"
-  .Waffles__box 
-    = image_tag "/remon&tea.jpg", alt: "檸檬と紅茶", class: "Waffles__box--image"
-    .Waffles__box--title
-      檸檬紅茶ワッフル
-    .Waffles__box--text
-      蜜漬けレモンピールとダージリンの茶葉を練り込んだワッフルです
-    .Waffles__box--price
-      150円（税抜き）
-    .Waffles__box--input
-      .Waffles__box--input--select_number 
-        個数
-      = select_tag '/',options_for_select([" ", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]), class: "input4"
-  .Waffles__box
-    = image_tag "/maple.jpg", alt: "メープル", class: "Waffles__box--image"
-    .Waffles__box--title
-      メープルワッフル
-    .Waffles__box--text
-      メープルシロップを使用したコクのある味わいのワッフルです
-    .Waffles__box--price
-      150円（税抜き）
-    .Waffles__box--input
-      .Waffles__box--input--select_number 
-        個数
-      = select_tag '/',options_for_select([" ", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]), class: "input5"
-.Prices
-  .Prices__title
-    ご注文内容
-  .Prices__contents
-    .Prices__contents--fleaver
-      プレーンワッフル
-    .Prices__contents--fleaver
-      チョコワッフル
-    .Prices__contents--fleaver
-      宇治抹茶ワッフル
-    .Prices__contents--fleaver
-      檸檬と紅茶ワッフル
-    .Prices__contents--fleaver
-      メープルワッフル
-  .Contents__form
+.Wrapper
+  .Contents
+    = image_tag "/waffleB.jpg", alt: "トップ画面", class: "Contents__image"
+  .Select
+    %h1.Select__waffle
+      menu
+    %p.Select__waffleB
+  .Waffles
+    .Waffles__box
+      = image_tag "/plain.jpg", alt: "プレーン", class: "Waffles__box--image"
+      .Waffles__box--title
+        プレーンワッフル
+      .Waffles__box--text
+        蜂蜜とバターの風味豊かなワッフルです
+      .Waffles__box--price
+        150円（税抜き)
+      .Waffles__box--input
+        .Waffles__box--input--select_number 
+          
+    .Waffles__box
+      = image_tag "/choco.jpg", alt: "チョコ", class: "Waffles__box--image"
+      .Waffles__box--title
+        チョコワッフル
+      .Waffles__box--text
+        ビタースウィートチョコをコーティングしました
+      .Waffles__box--price
+        150円（税抜き）
+      .Waffles__box--input
+        .Waffles__box--input--select_number 
+          
+    .Waffles__box
+      = image_tag "/matcha.jpg", alt: "宇治抹茶", class: "Waffles__box--image"
+      .Waffles__box--title
+        宇治抹茶ワッフル
+      .Waffles__box--text
+        京都産宇治抹茶と北海道小豆を練り込んだワッフルです
+      .Waffles__box--price
+        150円（税抜き）
+      .Waffles__box--input
+        .Waffles__box--input--select_number 
+          
+    .Waffles__box 
+      = image_tag "/remon&tea.jpg", alt: "檸檬と紅茶", class: "Waffles__box--image"
+      .Waffles__box--title
+        檸檬紅茶ワッフル
+      .Waffles__box--text
+        蜜漬けレモンピールとダージリンの茶葉を練り込んだワッフルです
+      .Waffles__box--price
+        150円（税抜き）
+      .Waffles__box--input
+        .Waffles__box--input--select_number 
+          
+    .Waffles__box
+      = image_tag "/maple.jpg", alt: "メープル", class: "Waffles__box--image"
+      .Waffles__box--title
+        メープルワッフル
+      .Waffles__box--text
+        メープルシロップを使用したコクのある味わいのワッフルです
+      .Waffles__box--price
+        150円（税抜き）
+      .Waffles__box--input
+        .Waffles__box--input--select_number 
+          
+  .Form
+    = link_to "注文画面に進む", "/orders/new", class:"Form__contents"
+
+  
