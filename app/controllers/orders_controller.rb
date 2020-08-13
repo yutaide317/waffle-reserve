@@ -3,14 +3,19 @@ class OrdersController < ApplicationController
   end
 
   def new
+    @order = Order.new
   end
 
   def create
-    Order.create(order_params)
+    @order = Order.new(order_params)
+    if @order.save
+    else
+      render :new
+    end
 
   end
 
   def order_params
-    params.permit(:name, :email, :plain, :choco, :matcha, :lemon, :maple, :signup_at)
+    params.require(:order).permit(:name, :email, :plain, :choco, :matcha, :lemon, :maple, :signup_at)
   end
 end

@@ -1,11 +1,3 @@
-.Header
-  .Header__logo
-    waffle_reserve
-  .Header__info
-    .Header__info--user
-      yuta
-    .Hesder__info--logout
-      log
 .Wrapper
   .Contents
     = image_tag "/waffleB.jpg", alt: "トップ画面", class: "Contents__image"
@@ -15,7 +7,7 @@
     %p.Select__waffleB
   .Waffles
     .Waffles__box
-      = image_tag "/plain.jpg", alt: "プレーン", class: "Waffles__box--image"
+      = image_tag "/plain.jpg", alt: "プレーン", id: "camera", class: "Waffles__box--image"
       .Waffles__box--title
         プレーンワッフル
       .Waffles__box--text
@@ -26,7 +18,7 @@
         .Waffles__box--input--select_number 
           
     .Waffles__box
-      = image_tag "/choco.jpg", alt: "チョコ", class: "Waffles__box--image"
+      = image_tag "/choco.jpg", alt: "チョコ", id: "camera",class: "Waffles__box--image"
       .Waffles__box--title
         チョコワッフル
       .Waffles__box--text
@@ -37,7 +29,7 @@
         .Waffles__box--input--select_number 
           
     .Waffles__box
-      = image_tag "/matcha.jpg", alt: "宇治抹茶", class: "Waffles__box--image"
+      = image_tag "/matcha.jpg", alt: "宇治抹茶", id: "camera", class: "Waffles__box--image"
       .Waffles__box--title
         宇治抹茶ワッフル
       .Waffles__box--text
@@ -48,18 +40,18 @@
         .Waffles__box--input--select_number 
           
     .Waffles__box 
-      = image_tag "/remon&tea.jpg", alt: "檸檬と紅茶", class: "Waffles__box--image"
+      = image_tag "/remon&tea.jpg", alt: "檸檬と紅茶", id: "camera", class: "Waffles__box--image"
       .Waffles__box--title
         檸檬紅茶ワッフル
       .Waffles__box--text
-        蜜漬けレモンピールとダージリンの茶葉を練り込んだワッフルです
+        レモンピールとダージリンの茶葉を練り込んだワッフルです
       .Waffles__box--price
         150円（税抜き）
       .Waffles__box--input
         .Waffles__box--input--select_number 
           
     .Waffles__box
-      = image_tag "/maple.jpg", alt: "メープル", class: "Waffles__box--image"
+      = image_tag "/maple.jpg", alt: "メープル", id: "camera", class: "Waffles__box--image"
       .Waffles__box--title
         メープルワッフル
       .Waffles__box--text

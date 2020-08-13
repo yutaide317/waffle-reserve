@@ -3,7 +3,7 @@
 }
 .Header {
   position: fixed;
-  height: 50px;
+  height: 70px;
   width: 100%;
   background-color: #4f2e00;
   padding: 10px 0;
@@ -14,9 +14,10 @@
   &__logo {
     width: 50%;
     margin-left: 30px;
-    font-size: 20px;
+    padding-bottom: 5px;
+    font-size: 40px;
     font-weight: bold;
-    font-style: italic;
+    font-family: 'Caveat', cursive;
 
   }
   &__info {
@@ -30,9 +31,10 @@
   background-color: #ffffcc;
 }
 .Contents {
-  height: calc(100vh - 50px);
+  height: calc(100vh - 70px);
+  animation: SlideIn 1.6s;
   &__image {
-    height: 90%;
+    height: 100%;
     width: 100%;
   }
 }
@@ -43,8 +45,9 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  font-family: 'Caveat', cursive;
   &__waffle {
-    font-size: 30px;  
+    font-size: 35px;  
     border-bottom: solid 3px brown;
     text-align: center;
     width: 100px;
@@ -66,6 +69,24 @@
     &--image {
       height: 250px;
       width: 256px;
+      -webkit-animation: Waffles__box--image 0.8s linear 0s 1;
+      animation: Waffles__box--image 0.8s linear 0s 1;
+    }
+    @-webkit-keyframes Waffles__box--image {
+      0%   { -webkit-transform: scale(1.0, 1.0) translate(0%, 0%); }
+      15%  { -webkit-transform: scale(0.9, 0.9) translate(0%, 5%); }
+      30%  { -webkit-transform: scale(1.3, 0.8) translate(0%, 10%); }
+      50%  { -webkit-transform: scale(0.8, 1.3) translate(0%, -10%); }
+      70%  { -webkit-transform: scale(1.1, 0.9) translate(0%, 5%); }
+      100% { -webkit-transform: scale(1.0, 1.0) translate(0%, 0%); }
+    }
+    @keyframes Waffles__box--image {
+      0%   { transform: scale(1.0, 1.0) translate(0%, 0%); }
+      15%  { transform: scale(0.9, 0.9) translate(0%, 5%); }
+      30%  { transform: scale(1.3, 0.8) translate(0%, 10%); }
+      50%  { transform: scale(0.8, 1.3) translate(0%, -10%); }
+      70%  { transform: scale(1.1, 0.9) translate(0%, 5%); }
+      100% { transform: scale(1.0, 1.0) translate(0%, 0%); }
     }
     &--title {
       font-size: 20px;
@@ -109,23 +130,52 @@
 }
 .Wrapper_new  {
   background-color: #ffffcc;
-  height: 110vh;
+  height: 135vh;
   width: 100%;
+  padding-top: 90px;
 }
 .Title {
   color: #4f2e00;
-  height: 180px ;
+  height: 150px ;
   padding-top: 30px;
   display: flex;
   align-items: center;
   flex-direction: column;
   font-size: 40px;
+  
 }
 .FormSelect {
   color: #4f2e00;
   height: 380px ;
-  margin: 0 160px;
+  margin: 0 300px;
   
+  &__errors {
+    margin: 30px 0;
+    padding: 20px 40px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    text-align: center;
+    background-color: #f3dfdf;
+  } 
+}
+h2 {
+  margin-bottom: 10px;
+  color: #f05050;
+  font-size: 14px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  color: #f05050;
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  color: #f05050;
+  font-size: 13px;
 }
 .Selects {
   display: flex;
@@ -133,7 +183,7 @@
   flex-direction: column;
   justify-content: space-around;
   font-size: 20px;
-
+  
   &__name {
     display: flex;
     align-items: center;
@@ -179,6 +229,7 @@
   background-color: #ffffcc;
   height: 100vh;
   width: 100%;
+  animation: SlideIn 1.6s;
   &__contents {
     font-size: 30px;
     color: #4f2e00;
@@ -186,5 +237,15 @@
   &__link {
     margin-top: 20px;
 
+  }
+}
+@keyframes SlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-64px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
