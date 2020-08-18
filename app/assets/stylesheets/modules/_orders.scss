@@ -130,7 +130,7 @@
 }
 .Wrapper_new  {
   background-color: #ffffcc;
-  height: 135vh;
+  height: 150vh;
   width: 100%;
   padding-top: 90px;
 }
@@ -183,7 +183,6 @@ li {
   flex-direction: column;
   justify-content: space-around;
   font-size: 20px;
-  
   &__name {
     display: flex;
     align-items: center;
@@ -205,10 +204,15 @@ li {
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 500px;
     &--fleaver {
       width: 60px;
       height: 30px;
     }
+  }
+  &__day {
+    display: flex;
+    align-items: center;
   }
 }
 .Send_btn {
@@ -233,6 +237,26 @@ li {
   &__contents {
     font-size: 30px;
     color: #4f2e00;
+  }
+  &__reserve {
+    display: flex;
+    align-items: flex-start;;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+    border-radius : 1px;
+    box-shadow :
+        0 0 0 1px #666666,
+        0 0 0 3px #ffffff,
+        0 0 0 5px #4f2e00;
+    &--select {
+      font-size: 20px;
+      margin-left: 50px;
+      margin-bottom: 5px;
+      border-bottom: 1px solid black;
+    }
+    
   }
   &__link {
     margin-top: 20px;

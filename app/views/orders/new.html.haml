@@ -20,18 +20,20 @@
           = f.text_field :email, class:"Selects__email--text"
         .Selects__waffle
           プレーンワッフル
-          = f.number_field :plain, class:"Selects__waffle--fleaver", min: 0
+          = f.number_field :plain, class:"Selects__waffle--fleaver", min: 1
           チョコワッフル
-          = f.number_field :choco, class:"Selects__waffle--fleaver", min: 0
+          = f.number_field :choco, class:"Selects__waffle--fleaver", min: 1
           宇治抹茶ワッフル
-          = f.number_field :matcha, class:"Selects__waffle--fleaver", min: 0
+          = f.number_field :matcha, class:"Selects__waffle--fleaver", min: 1
           檸檬紅茶ワッフル
-          = f.number_field :lemon, class:"Selects__waffle--fleaver", min: 0
+          = f.number_field :lemon, class:"Selects__waffle--fleaver", min: 1
           メープルワッフル
-          = f.number_field :maple, class:"Selects__waffle--fleaver", min: 0
-          受け取り日時
-          = f.datetime_field :signup_at, class:"Selects__waffle--time"
-        
+          = f.number_field :maple, class:"Selects__waffle--fleaver", min: 1
+          ご予約日
+          = f.date_field :signup_at, use_month_numbers: true, start_year: 2020, end_year: 2021, minute_step: 15, prompt: {year: "年", month: "月", day: "日"} 
+          お受け取り時間
+        .Selects__hour   
+          = f.time_select :time, {include_blank: true, start_hour: 10, end_hour: 20, minute_step: 15}
         = f.submit "注文を確定する", class:"Send_btn"
         
         .Back

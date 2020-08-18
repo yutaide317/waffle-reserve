@@ -20,7 +20,8 @@ ActiveRecord::Schema.define(version: 2020_08_04_075444) do
     t.integer "matcha"
     t.integer "lemon"
     t.integer "maple"
-    t.datetime "signup_at", null: false
+    t.date "signup_at", null: false
+    t.time "time", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

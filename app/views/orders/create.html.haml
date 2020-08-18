@@ -1,5 +1,48 @@
 .Finish
   .Finish__contents
     注文が完了しました
+  .Finish__contents
+    ご来店お待ちしております
+  .Finish__reserve
+    .Finish__reserve--select
+      ご注文内容
+    .Finish__reserve--plain
+      - if @order.plain.present?
+        %p.plain
+          プレーン
+          = @order.plain
+          個
+    .Finish__reserve--choco
+      - if @order.choco.present?
+        %p.choco
+          チョコ
+          = @order.choco
+          個
+    .Finish__reserve--matcha
+      - if @order.matcha.present?
+        %p.matcha
+          宇治抹茶
+          = @order.matcha
+          個
+    .Finish__reserve--lemon
+      - if @order.lemon.present?
+        %p.lemon
+          檸檬と紅茶
+          = @order.lemon
+          個
+    .Finish__reserve--maple
+      - if @order.maple.present?
+        %p.maple
+          メープル
+          = @order.maple
+          個
+    .Finish__reserve--day
+      ご予約日
+      = @order.signup_at.strftime("%Y年%m月%d日")
+    .Finish__reserrve--hour
+      お受け取り時間
+      = @order.time.strftime("%H時%M分")
+    
+    
   .Finish__link
     = link_to "トップページに戻る", '/orders'
