@@ -30,7 +30,7 @@
           メープルワッフル
           = f.number_field :maple, class:"Selects__waffle--fleaver", min: 1
           ご予約日
-          = f.date_field :signup_at, use_month_numbers: true, start_year: 2020, end_year: 2021, minute_step: 15, prompt: {year: "年", month: "月", day: "日"} 
+          = f.date_field :signup_at
           お受け取り時間
         .Selects__hour   
           = f.time_select :time, {include_blank: true, start_hour: 10, end_hour: 20, minute_step: 15}
