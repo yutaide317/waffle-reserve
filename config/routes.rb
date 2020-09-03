@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+  
   get 'maple_waffles/index'
   get 'lemon_waffles/index'
   get 'matcha_waffles/index'

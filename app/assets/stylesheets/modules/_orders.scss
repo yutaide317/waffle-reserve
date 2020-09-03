@@ -189,23 +189,6 @@ li {
   flex-direction: column;
   justify-content: space-around;
   font-size: 20px;
-  &__name {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: left;
-    &--text{
-      height: 30px;
-    }
-  }
-  &__email {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    &--text {
-      height: 30px;
-    }
-  }
   &__waffle {
     display: flex;
     align-items: center;

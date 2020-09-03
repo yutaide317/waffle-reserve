@@ -11,13 +11,6 @@
             - @order.errors.full_messages.each do |message|
               %li= message  
       .Selects
-        .Selects__name
-          名前
-          = f.text_field :name, class:"Selects__name--text"
-          
-        .Selects__email
-          メールアドレス
-          = f.text_field :email, class:"Selects__email--text"
         .Selects__waffle
           プレーンワッフル
           = f.number_field :plain, class:"Selects__waffle--fleaver", min: 1
