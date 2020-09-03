@@ -1,0 +1,77 @@
+.information
+  .explanation
+    .explanation__image
+      = image_tag "/maple.jpg", alt: "メープル", id: "camera"
+    .explanation__waffle
+      %h1.explanation__waffle--code
+        メープルワッフル
+      .explanation__waffle--info
+        メープルシロップを使用したコクのある味わいのワッフルです
+      .explanation__waffle--price
+        150円（税抜き)
+  .bottom
+    .detail
+      .detail__allergies
+        アレルギー情報
+      .detail__contents
+        特定原材料７品目
+      %table
+        %tr.allergies_area
+          %th
+            卵
+          %th 
+            乳
+          %th 
+            小麦
+          %th 
+            落花生
+          %th 
+            そば
+          %th 
+            えび
+          %th 
+            かに
+        %tr
+          %td
+            ●
+          %td 
+            ●
+          %td 
+            ●
+          %td 
+            ×
+          %td 
+            ×
+          %td 
+            ×
+          %td  
+            ×
+      .detail__nutritional
+        栄養成分情報(１個あたり)
+      .detail__contents
+        %table
+          %tr.nutritional_area
+            %th
+              エネルギー kcal
+            %th 
+              たんぱく質 g
+            %th 
+              脂質 g
+            %th 
+              炭水化物 g
+            %th 
+              食塩相当量 g
+          %tr
+            %td
+              222
+            %td 
+              3.9
+            %td 
+              11.7
+            %td 
+              25.1
+            %td 
+              0.2
+  .change
+    .chage__box
+      = link_to "メニューに戻る", :back

@@ -1,0 +1,77 @@
+.information
+  .explanation
+    .explanation__image
+      = image_tag "/matcha.jpg", alt: "宇治抹茶", id: "camera"
+    .explanation__waffle
+      %h1.explanation__waffle--code
+        宇治抹茶ワッフル
+      .explanation__waffle--info
+        京都産宇治抹茶と北海道小豆を練り込んだワッフルです
+      .explanation__waffle--price
+        150円（税抜き)
+  .bottom
+    .detail
+      .detail__allergies
+        アレルギー情報
+      .detail__contents
+        特定原材料７品目
+      %table
+        %tr.allergies_area
+          %th
+            卵
+          %th 
+            乳
+          %th 
+            小麦
+          %th 
+            落花生
+          %th 
+            そば
+          %th 
+            えび
+          %th 
+            かに
+        %tr
+          %td
+            ●
+          %td 
+            ●
+          %td 
+            ●
+          %td 
+            ×
+          %td 
+            ×
+          %td 
+            ×
+          %td  
+            ×
+      .detail__nutritional
+        栄養成分情報(１個あたり)
+      .detail__contents
+        %table
+          %tr.nutritional_area
+            %th
+              エネルギー kcal
+            %th 
+              たんぱく質 g
+            %th 
+              脂質 g
+            %th 
+              炭水化物 g
+            %th 
+              食塩相当量 g
+          %tr
+            %td
+              231
+            %td 
+              4.1
+            %td 
+              12.1
+            %td 
+              26.5
+            %td 
+              0.1
+  .change
+    .chage__box
+      = link_to "メニューに戻る", :back

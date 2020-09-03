@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+.information {
+  height: 100%;
+  background-color: #ffffcc;
+}
+.explanation {
+  padding: 0 100px;
+  display: flex;
+  padding-top: 120px;
+  height: 500px;
+  &__image {
+    height: 500px;
+    width: 50%;
+    text-align: center;  
+  }
+  &__waffle {
+    height: 500px;
+    width: 50%;
+    padding-top: 40px;
+    color: #4f2e00;
+    text-align: left;
+    &--code {
+      font-size: 36px;
+      font-weight: bold;
+    }
+    &--info {
+      font-size: 18px;
+      margin: 18px 0;
+      line-height: 32px;
+    }
+    &--price {
+      font-size: 25px;
+      font-weight: bold;
+    }    
+  }
+}
+
+.detail {
+  padding: 0 300px;
+  color: #4f2e00;
+  text-align: left;
+  &__allergies {
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  &__contents {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  &__nutritional {
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 70px;
+    margin-bottom: 10px;
+  }
+}
+.allergies_area {
+  background-color: rgb(243, 159, 128);
+}
+.nutritional_area {
+  background-color: rgb(116, 248, 248);
+}
+table {
+  width: 100%;
+  height: 120px;
+  table-layout: fixed;
+  text-align: center;
+}
+table th {
+  border:1px #999 solid;
+  text-align: center;
+}
+table td {
+  border:1px #999 solid;
+  background-color: white;
+}
+.change {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 15px;
+  margin-top: 20px;
+}
