@@ -123,27 +123,26 @@ a {
   color: #4f2e00;
 }
 .Form {
-  height: 200px;
+  height: 100px;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   font-size: 20px;
   &__contents {
-    margin-top: 20px;
-    border: none;
-    color: #961596;
+    
   }
 }
 .Wrapper_new  {
   background-color: #ffffcc;
-  height: 150vh;
+  height: 100vh;
   width: 100%;
   padding-top: 90px;
+  overflow: scroll;
 }
 .Title {
   color: #4f2e00;
-  height: 150px ;
+  height: 100px ;
   padding-top: 30px;
   display: flex;
   align-items: center;
@@ -230,7 +229,8 @@ li {
 }
 .Back {
   font-size: 10px;
-  margin-top: 15px;
+  margin-top: 20px;
+  height: 50px;
 }
 .Finish {
   display: flex;
