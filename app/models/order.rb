@@ -1,11 +1,9 @@
 class Order < ApplicationRecord
-  validates :name, presence: true
-  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-  validates :email, {presence: true, format: { with: VALID_EMAIL_REGEX }}
   validates :signup_at, presence: true
   validates :time, presence: true
   validates :WaffleSelect, presence: true
   validate :date_cannot_be_in_the_past
+  belongs_to :user
   
   private
     def WaffleSelect

@@ -25,11 +25,28 @@
   }
   &__info {
     width: 50%;
-    padding-left: 500px;
+    padding-left: 450px;
     display: flex;
     justify-content: space-around;
+    font-size: 20px;
+    
+    &--user {
+      display: flex;
+      justify-content: space-around;
+      font-size: 15px;
+      width: 300px;
+      font-weight: bold;
+      padding-top: 15px;
+      padding-right: 10px;
+    }
   }
 }
+.user_name {
+  margin-right: 20px;
+  
+}
+
+
 .Wrapper {
   background-color: #ffffcc;
 }
@@ -148,7 +165,7 @@ a {
   align-items: center;
   flex-direction: column;
   font-size: 40px;
-  
+  margin-bottom: 10px;
 }
 .FormSelect {
   color: #4f2e00;
@@ -189,23 +206,6 @@ li {
   flex-direction: column;
   justify-content: space-around;
   font-size: 20px;
-  &__name {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: left;
-    &--text{
-      height: 30px;
-    }
-  }
-  &__email {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    &--text {
-      height: 30px;
-    }
-  }
   &__waffle {
     display: flex;
     align-items: center;
@@ -228,7 +228,7 @@ li {
   color: #ffffff;
 }
 .Back {
-  font-size: 10px;
+  font-size: 13px;
   margin-top: 20px;
   height: 50px;
 }
