@@ -12,5 +12,6 @@ Rails.application.routes.draw do
   resources :matcha_waffles, only: :index
   resources :lemon_waffles, only: :index
   resources :maple_waffles, only: :index
+  resources :users, only: :show
   root "orders#index"
 end

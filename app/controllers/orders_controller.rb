@@ -23,6 +23,6 @@ class OrdersController < ApplicationController
   end
 
   def order_params
-    params.require(:order).permit(:plain, :choco, :matcha, :lemon, :maple, :signup_at, :time)
+    params.require(:order).permit(:plain, :choco, :matcha, :lemon, :maple, :signup_at, :time).merge(user_id: current_user.id)
   end
 end

@@ -15,9 +15,22 @@
       .Header__info
         - if user_signed_in?
           .Header__info--user
-            = link_to "ログアウト", destroy_user_session_path, method: :delete
+            .user_name
+              = link_to "/users/#{current_user.id}" do
+                = icon('fas', 'user')
+                = current_user.Name
+            .user_out
+              = link_to  destroy_user_session_path, method: :delete do
+                = icon('fas', 'sign-out-alt')
+                ログアウト
         - else
-          .Hesder__info--logout
-            = link_to "ログイン", new_user_session_path
-            = link_to "新規登録", new_user_registration_path
+          .Header__info--user
+            .user_name
+              = link_to new_user_session_path do
+                = icon('fas', 'sign-in-alt')
+                ログイン
+            .user_out
+              = link_to new_user_registration_path do
+                = icon('fas', 'user-plus')
+                新規登録
     = yield

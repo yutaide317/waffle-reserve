@@ -1,6 +1,7 @@
 .Wrapper
   .Contents
-    = image_tag "/waffleB.jpg", alt: "トップ画面", class: "Contents__image"
+    = link_to lemon_waffles_path do
+      = image_tag "/waffleB.jpg", alt: "トップ画面", class: "Contents__image"
   .Select
     %h1.Select__waffle
       menu

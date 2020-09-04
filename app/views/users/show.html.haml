@@ -1,0 +1,48 @@
+.wall
+  .history
+    .history__box
+      = "#{@name}さんの注文一覧"
+  .order_list
+    - @orders.each do |order|
+      .order_list__contents
+        .order_list__contents--box
+          ご注文内容
+        .plain
+          - if order.plain.present?
+            %p.plain
+              プレーン
+              = order.plain
+              個
+        .choco
+          - if order.choco.present?
+            %p.choco
+              チョコ
+              = order.choco
+              個
+        .matcha
+          - if order.matcha.present?
+            %p.matcha
+              宇治抹茶
+              = order.matcha
+              個
+        .lemon
+          - if order.lemon.present?
+            %p.lemon
+              檸檬と紅茶
+              = order.lemon
+              個
+        .maple
+          - if order.maple.present?
+            %p.maple
+              メープル
+              = order.maple
+              個
+        .day
+          ご予約日
+          = order.signup_at.strftime("%Y年%m月%d日")
+        .hour
+          お受け取り時間
+          = order.time.strftime("%H時%M分")
+  .return
+    .return__box
+      = link_to "メニューに戻る", :back

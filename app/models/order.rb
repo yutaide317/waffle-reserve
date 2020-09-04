@@ -3,6 +3,7 @@ class Order < ApplicationRecord
   validates :time, presence: true
   validates :WaffleSelect, presence: true
   validate :date_cannot_be_in_the_past
+  belongs_to :user
   
   private
     def WaffleSelect
