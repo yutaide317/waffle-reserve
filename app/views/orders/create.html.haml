@@ -1,6 +1,6 @@
 .Finish
   .Finish__contents
-    注文が完了しました
+    ご注文が完了しました
   .Finish__contents
     ご来店お待ちしております
   .Finish__reserve
@@ -36,6 +36,10 @@
           メープル
           = @order.maple
           個
+    .Finish__reserve--total
+      合計金額(税込み)
+      = @order.total
+      円
     .Finish__reserve--day
       ご予約日
       = @order.signup_at.strftime("%Y年%m月%d日")

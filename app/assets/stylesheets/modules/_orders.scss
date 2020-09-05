@@ -211,9 +211,23 @@ li {
     align-items: center;
     flex-direction: column;
     width: 500px;
+    
     &--fleaver {
       width: 60px;
       height: 30px;
+      text-align: center;
+    }
+    &--total {
+      height: 30px;
+      width: 100px;
+      text-align: center;
+      border: none;
+      background-color: #ffffcc;
+      font-size: 25px;
+    }
+    &--box {
+      margin-bottom: 20px;
+      margin-top: 10px;
     }
   }
   &__day {

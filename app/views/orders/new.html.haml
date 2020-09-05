@@ -3,7 +3,7 @@
     .Title__first
       ご注文内容を入力してください
   .FormSelect
-    = form_with model: @order, local: true do |f| 
+    = form_with model: @order, id:"form", local: true do |f| 
       - if @order.errors.any?
         .FormSelect__errors
           %h2= "#{@order.errors.full_messages.count}件のエラーが発生しました。"
@@ -12,16 +12,25 @@
               %li= message  
       .Selects
         .Selects__waffle
-          プレーンワッフル
+          プレーンワッフル(個)
           = f.number_field :plain, class:"Selects__waffle--fleaver", min: 1
-          チョコワッフル
+        .Selects__waffle
+          チョコワッフル(個)
           = f.number_field :choco, class:"Selects__waffle--fleaver", min: 1
-          宇治抹茶ワッフル
+        .Selects__waffle
+          宇治抹茶ワッフル(個)
           = f.number_field :matcha, class:"Selects__waffle--fleaver", min: 1
-          檸檬紅茶ワッフル
+        .Selects__waffle
+          檸檬紅茶ワッフル(個)
           = f.number_field :lemon, class:"Selects__waffle--fleaver", min: 1
-          メープルワッフル
+        .Selects__waffle
+          メープルワッフル(個)
           = f.number_field :maple, class:"Selects__waffle--fleaver", min: 1
+          合計金額（税込み）
+          .Selects__waffle--box
+            = f.text_field :total, readonly: true, class:"Selects__waffle--total"
+            円
+          .Selects__waffle--space
           ご予約日
           = f.date_field :signup_at
           お受け取り時間
