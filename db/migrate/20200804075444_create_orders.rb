@@ -8,6 +8,8 @@ class CreateOrders < ActiveRecord::Migration[6.0]
       t.integer :maple
       t.date :signup_at, null: false
       t.time :time, null: false
+      t.integer :total
+      t.integer :user_id
       t.timestamps
     end
   end
