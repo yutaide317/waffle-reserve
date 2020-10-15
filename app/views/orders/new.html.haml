@@ -35,7 +35,7 @@
           = f.date_field :signup_at
           お受け取り時間
         .Selects__hour   
-          = f.time_select :time, {include_blank: true, start_hour: 10, end_hour: 20, minute_step: 15}
+          = f.time_field :time, { min: "11:00:00", max: "20:00:00" }
         = f.submit "注文を確定する", class:"Send_btn"
         
         .Back

@@ -45,8 +45,6 @@
       = @order.signup_at.strftime("%Y年%m月%d日")
     .Finish__reserrve--hour
       お受け取り時間
-      = @order.time.strftime("%H時%M分")
-    
-    
+      = @order.time.strftime("%H時%M分") 
   .Finish__link
     = link_to "トップページに戻る", '/orders'
