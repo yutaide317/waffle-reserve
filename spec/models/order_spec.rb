@@ -8,10 +8,18 @@ describe Order do
       expect(order.errors[:WaffleSelect]).to include("を入力してください")
     end
 
+    # 2. 日付が空では登録できない
     it "is invalid without a signup_at" do
       order = build(:order, signup_at: nil)
       order.valid?
       expect(order.errors[:signup_at]).to include("を入力してください")
+    end
+
+    # 3. 過去の日付では登録できない
+    it "is invalid date_cannot_be_in_the_past" do
+      order = build(:order, signup_at: "2020-10-12")
+      order.valid?
+      expect(order.errors[:signup_at]).to include(": 過去の日付は使用できません")
     end
   end
 end
