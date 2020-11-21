@@ -21,5 +21,12 @@ describe Order do
       order.valid?
       expect(order.errors[:signup_at]).to include(": 過去の日付は使用できません")
     end
+
+    # 4. 時間が空では登録できない
+    it "is invalid without time" do
+      order = build(:order, time: nil)
+      order.valid?
+      expect(order.errors[:time]).to include("を入力してください")
+    end
   end
 end
