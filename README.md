@@ -28,4 +28,31 @@ This is the actual image
 
 % rails db:migrate
 
+# DB
+## users
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|email|string|null: false, unique: true|
+|password|string|null: false|
+|password_confirmation|string|null: false|
+### Association
+- has_many :orders
+
+## orders
+|Column|Type|Options|
+|------|----|-------|
+|plain|integer|
+|choco|integer|
+|matcha|integer|
+|lemon|integer|
+|maple|integer|
+|signup_at|date|null: false|
+|time|time|null: false|
+|total|integer|
+|user_id|integer|
+
+### Association
+- belongs_to :user
+
 
